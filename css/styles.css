@@ -145,11 +145,21 @@ body {
 .header-address:focus {
   color: var(--accent);
 }
+
+.icon-smartphone,
+.icon-envelope {
+  fill: currentColor;
+}
+
 /*------------------------- INDEX HERO ------------------------------------------------------------------------------------------------------------------------------*/
 .hero {
   background-color: #2f303a;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/herobg.jpg);
   padding-top: 200px;
   padding-bottom: 200px;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 .hero-title {
   font-weight: 900;
@@ -206,7 +216,25 @@ body {
 .advantages-item:not(:first-child) {
   margin-left: var(--max-margin);
 }
-
+.advantages-icon {
+  width: 100%;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  padding: 25px, 100px;
+  margin-bottom: var(--average-margin);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-antenna {
+}
+.icon-clock {
+}
+.icon-diagram {
+}
+.icon-astronaut {
+}
 .advantages-subtittle {
   font-size: 14px;
   line-height: 1.14;
