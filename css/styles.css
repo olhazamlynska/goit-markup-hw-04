@@ -287,9 +287,9 @@ body {
   min-width: 270px;
 
   background-color: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 0px 0px 4px 4px;
-
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-item:not(:first-child) {
   margin-left: var(--average-margin);
@@ -323,7 +323,6 @@ border-radius: 0px 0px 4px 4px;
 }
 
 .team-soc {
-
 }
 .soc-list {
   margin-top: 16px;
@@ -333,7 +332,7 @@ border-radius: 0px 0px 4px 4px;
   align-items: center;
 }
 .soc-item {
-  color: #AFB1B8;
+  color: #afb1b8;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -342,12 +341,12 @@ border-radius: 0px 0px 4px 4px;
   align-items: center;
 }
 .soc-item:hover,
-.soc-item:focus{
-  color: #FFFFFF;
+.soc-item:focus {
+  color: #ffffff;
   background-color: var(--accent);
 }
-.soc-link{
-color: inherit
+.soc-link {
+  color: inherit;
 }
 .icon-instagram {
   fill: currentColor;
@@ -361,11 +360,72 @@ color: inherit
 .icon-linkedin {
   fill: currentColor;
 }
+/*-------------------------  CLIENTS ------------------------------------------------------------------------------------------------------------------------------*/
+.clients {
+  padding-top: 47px;
+  padding-bottom: 94px;
+}
+.clients-tittle {
+  margin-bottom: var(--max-margin);
+}
+
+.clients-list {
+  margin-left: -30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clients-item {
+  color: #afb1b8;
+  width: calc(100% / 6 - 30px);
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  margin-left: var(--average-margin);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clients-item:hover,
+.clients-item:focus {
+  color: var(--accent);
+  border: 1px solid var(--accent);
+}
+.clients-link {
+  color: inherit;
+}
+
+.clients-icon-Fgroup {
+  fill: currentColor;
+}
+.clients-icon-Sgroup {
+  fill: currentColor;
+}
+.clients-icon-Tgroup {
+  fill: currentColor;
+}
+.clients-icon-Fogroup {
+  fill: currentColor;
+}
+.clients-icon-Figroup {
+  fill: currentColor;
+}
+.clients-icon-Sigroup {
+  fill: currentColor;
+}
+
 /*-------------------------  FOOTER ------------------------------------------------------------------------------------------------------------------------------*/
 .footer {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+.adress {
+  margin-right: 70px;
 }
 
 .logo-footer {
@@ -398,6 +458,55 @@ color: inherit
 .footer-contacts:hover,
 .footer-contacts:focus {
   color: var(--accent);
+}
+
+.social {
+}
+.social-title {
+  font-family: 'Roboto';
+  font-size: 14px;
+  line-height: 1, 14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: var(--min-margin);
+
+  color: #ffffff;
+}
+.social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-item {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-item:hover,
+.social-item:focus {
+  background-color: var(--accent);
+}
+.social-link {
+  color: inherit;
+}
+
+.icon-instagram {
+  fill: currentColor;
+}
+.icon-twitter {
+  fill: currentColor;
+}
+.icon-facebook {
+  fill: currentColor;
+}
+.icon-linkedin {
+  fill: currentColor;
 }
 /*-------------------------  PORTFOLIO HTML ------------------------------------------------------------------------------------------------------------------------------*/
 .works {
@@ -435,6 +544,8 @@ color: inherit
 .works-btn:focus {
   color: #ffffff;
   background-color: var(--main-btn-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .works-ul {
   display: flex;
@@ -452,8 +563,13 @@ color: inherit
   background-color: #eeeeee;
 }
 
-.works-item:nth-last-child(-n + 3) {
+.works-item:nth-first-child(-n + 3) {
   margin-top: 0;
+}
+.works-item:hover,
+.works-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .works-link {
