@@ -326,7 +326,6 @@ body {
 }
 .soc-list {
   margin-top: 16px;
-  margin-bottom: var(--average-margin);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -339,6 +338,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.soc-item:not(:last-child) {
+margin-right: var(--min-margin);
 }
 .soc-item:hover,
 .soc-item:focus {
@@ -379,6 +381,7 @@ body {
 .clients-item {
   color: #afb1b8;
   width: calc(100% / 6 - 30px);
+  height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   margin-left: var(--average-margin);
@@ -496,8 +499,10 @@ body {
   background-color: var(--accent);
 }
 .social-link {
+  display: inline-block;
   color: inherit;
 }
+
 
 .icon-instagram {
   fill: currentColor;
@@ -563,7 +568,6 @@ body {
   margin-top: 30px;
 
   border-bottom: 1px solid #eeeeee;
-  background-color: #eeeeee;
 }
 
 .works-item:nth-first-child(-n + 3) {
