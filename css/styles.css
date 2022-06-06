@@ -214,7 +214,7 @@ body {
   text-align: left;
 }
 .advantages-item:not(:first-child) {
-  margin-left: var(--max-margin);
+  margin-left: var(--average-margin-margin);
 }
 .advantages-icon {
   width: 100%;
@@ -362,7 +362,7 @@ body {
 }
 /*-------------------------  CLIENTS ------------------------------------------------------------------------------------------------------------------------------*/
 .clients {
-  padding-top: 47px;
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 .clients-tittle {
@@ -487,6 +487,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.social-item:not(:last-child){
+  margin-right: var(--min-margin);
 }
 .social-item:hover,
 .social-item:focus {
